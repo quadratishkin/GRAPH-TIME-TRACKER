@@ -1,0 +1,30 @@
+.table{
+    margin-top: 20px;
+    display: flex;
+    gap: 2px;
+}
+
+.hintDayOfWeek{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+    color: rgba(149, 148, 148, 1);
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.squares{
+    display: flex;
+    gap: 2px;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

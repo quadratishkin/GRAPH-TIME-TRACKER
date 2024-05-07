@@ -1,0 +1,7 @@
+<div class="row">
+    <div class="compareText" >Меньше</div>
+    <div *ngFor='let item of ["zero","one","two","three","four"]' >
+       <div [ngClass]="item" class="block"></div>
+    </div>
+    <div class="compareText" >Больше</div>
+</div>

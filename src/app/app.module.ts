@@ -3,10 +3,18 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BlockComponent } from './components/block/block.component';
+import { ColumnComponent } from './components/column/column.component';
+import { TableComponent } from './components/table/table.component';
+import { InfoBlocksComponent } from './components/info-blocks/info-blocks.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BlockComponent,
+    ColumnComponent,
+    TableComponent,
+    InfoBlocksComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,39 @@
+.block{
+    width: 15px;
+    height: 15px;
+}
+
+.compareText{
+    font-family: Inter;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9.68px;
+    text-align: left;
+    color: rgba(149, 148, 148, 1);
+
+}
+
+.row{
+    display: flex;
+    gap: 2px;
+}
+
+.zero{
+    background-color: #EDEDED;
+}
+
+.one{
+    background-color: #ACD5F2;
+}
+
+.two{
+    background-color: #7FA8C9;
+}
+
+.three{
+    background-color: #527BA0;
+}
+
+.four{
+    background-color: #254E77;
+}

@@ -1,0 +1,42 @@
+.block{
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    &:hover{
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    &:focus{
+        border: 1px solid rgba(0, 0, 0, 0.9);
+    }
+}
+
+.nameOfMonth{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    color: rgba(149, 148, 148, 1);
+    position: absolute;
+    top: 0px;
+}
+
+.zero{
+    background-color: #EDEDED;
+}
+
+.one{
+    background-color: #ACD5F2;
+}
+
+.two{
+    background-color: #7FA8C9;
+}
+
+.three{
+    background-color: #527BA0;
+}
+
+.four{
+    background-color: #254E77;
+}

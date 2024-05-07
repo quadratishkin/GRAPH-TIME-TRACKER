@@ -1,0 +1,19 @@
+<span class="table">
+    <div class="hintDayOfWeek">
+        <span>
+            пн
+        </span>
+        <span>
+            ср
+        </span>
+        <span>
+            пт
+        </span>
+    </div>
+    <div class="wrapper">
+        <div class="squares" >
+            <app-column *ngFor="let item of countOfWeeks" [weekNumber]="item" ></app-column>
+        </div>
+        <app-info-blocks></app-info-blocks>
+    </div>
+</span>
