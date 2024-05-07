@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { GetInfoService } from '../../services/get-info.service';
 import moment from 'moment';
-import { DayOfWeek, Months } from './constants';
+import { DayOfWeek, Months, MonthsFull } from './constants';
 
 @Component({
   selector: 'app-block',
@@ -16,7 +16,9 @@ export class BlockComponent implements OnInit {
   compareObjData = ''
   style = 0;
   startMonth = ""
+  displayDateStrTitle = ""
   months = Months
+  monthsFull = MonthsFull
   dayOfWeek = DayOfWeek
 
   constructor(public getInfoService: GetInfoService){}
@@ -42,7 +44,13 @@ export class BlockComponent implements OnInit {
         this.myColor="four"
       }
 
-      this.displayDateStr = this.style + " contributions, " + this.dayOfWeek[moment(this.displayDateStr).day()] + ", " + this.displayDateStr
+      this.displayDateStrTitle = this.dayOfWeek[moment(this.displayDateStr).day()] 
+                          + ", " 
+                          + this.monthsFull[this.displayDateStr.split("-")[1]]
+                          + " "
+                          + this.displayDateStr.split("-")[2]
+                          + ", "
+                          + this.displayDateStr.split("-")[0]
     })
   }
 }

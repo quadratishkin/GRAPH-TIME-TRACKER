@@ -1,2 +1,8 @@
-<div [ngClass]="myColor" class="block" [title]="displayDateStr" tabindex="1"></div>
+<div [ngClass]="myColor" class="block" tabindex="1">
+    <span class="tooltiptext">
+        <div class="header" >{{style + " contributions"}}</div>
+        <span class="hint">{{displayDateStrTitle}}</span>
+    </span>
+</div>
+
 <div *ngIf="startMonth !== '' " class="nameOfMonth">{{months[this.displayDateStr.split("-")[1]]}} </div>

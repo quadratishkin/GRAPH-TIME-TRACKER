@@ -13,7 +13,22 @@ export const Months:{[key:string]: string} = {
     "12": "Дек.",
 }
 
-export const DayOfWeek:{[key:string]: string} = {
+export const MonthsFull:{[key:string]: string} = {
+    "01": "Январь",
+    "02": "Февраль",
+    "03": "Март",
+    "04": "Апрель",
+    "05": "Май",
+    "06": "Июнь",
+    "07": "Июль",
+    "08": "Август",
+    "09": "Сентябрь",
+    "10": "Октябрь",
+    "11": "Нояюрь",
+    "12": "Декабрь",
+}
+
+export const DayOfWeek:{[key:number]: string} = {
     0: "Воскресенье",
     1: "Понедельник",
     2: "Вторник",
