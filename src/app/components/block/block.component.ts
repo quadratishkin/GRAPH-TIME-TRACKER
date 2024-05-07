@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { GetInfoService } from '../../services/get-info.service';
 import moment from 'moment';
-import { Months } from './constants';
+import { DayOfWeek, Months } from './constants';
 
 @Component({
   selector: 'app-block',
@@ -17,6 +17,7 @@ export class BlockComponent implements OnInit {
   style = 0;
   startMonth = ""
   months = Months
+  dayOfWeek = DayOfWeek
 
   constructor(public getInfoService: GetInfoService){}
 
@@ -24,11 +25,13 @@ export class BlockComponent implements OnInit {
 
     this.getInfoService.dataLoadSubject.subscribe(()=>{
       this.displayDateStr = moment(this.currentDate).format("YYYY-MM-DD") 
+      
+
       if(this.displayDateStr.split("-")[2] === "01"){
         this.startMonth = this.months[this.displayDateStr.split("-")[1]]
       }
 
-      this.style = this.getInfoService.data[this.displayDateStr]
+      this.style = this.getInfoService.data[this.displayDateStr] || 0
       if(this.style>0 && this.style<9){
         this.myColor="one";
       }else if(this.style>9 && this.style<20){
@@ -38,6 +41,8 @@ export class BlockComponent implements OnInit {
       }else if(this.style>29){
         this.myColor="four"
       }
+
+      this.displayDateStr = this.style + " contributions, " + this.dayOfWeek[moment(this.displayDateStr).day()] + ", " + this.displayDateStr
     })
   }
 }
