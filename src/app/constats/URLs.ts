@@ -1,0 +1,1 @@
+export const getUrl = "https://dpg.gg/test/calendar.json"

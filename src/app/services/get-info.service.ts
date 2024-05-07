@@ -2,25 +2,21 @@ import { Injectable } from '@angular/core';
 import axios from 'axios';
 import moment from 'moment';
 import { Subject } from 'rxjs';
+import { getUrl } from '../constats/URLs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GetInfoService {
-
-  getUrl = "https://dpg.gg/test/calendar.json"
-
   currentDate = "2023-10-25"
   mondayOfCurrentWeek = ""
-
-
 
   data: {[key:string]: number}={};
   dataLoadSubject = new Subject<any>()
 
 
   constructor() {
-    axios.get(this.getUrl)
+    axios.get(getUrl)
     .then( (response) => {
       this.data = response.data;
       this.dataLoadSubject.next(this.data)
