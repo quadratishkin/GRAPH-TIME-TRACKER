@@ -8,12 +8,13 @@
 .blockInside {
   display: flex;
   width: 200%;
+  justify-content: space-around;
   animation: moving 5s linear infinite;
 }
 
 .elements {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   white-space: nowrap;
   width: 100%;
 }
