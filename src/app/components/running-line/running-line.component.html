@@ -1,0 +1,20 @@
+<p>running-line works!</p>
+
+<div class="withoutSpace">
+    <div [ngClass]="{
+        right: direction === directionRight,
+        left: direction === directionLeft
+      }" class="blockInside">
+        <div class="elements">
+            <h1>3213124324532523532532321 </h1>
+            <h1>hellogrgrehellogrgrehellogrgrehellogrgre </h1>
+        </div>
+
+        <div class="elements">
+            <h1>3213124324532523532532321 </h1>
+            <h1>hellogrgrehellogrgrehellogrgrehellogrgre </h1>
+        </div>
+    </div>
+</div>
+
+<button (click)="changeDirection()">Поменять направление</button>

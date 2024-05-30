@@ -1,0 +1,45 @@
+.withoutSpace {
+  margin: 30px auto;
+  border: 1px solid black;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.blockInside {
+  display: flex;
+  width: 200%;
+  animation: moving 5s linear infinite;
+}
+
+.elements {
+  display: flex;
+  justify-content: space-evenly;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.left {
+  animation: movingLeft 5s linear infinite;
+}
+
+.right {
+  animation: movingRight 5s linear infinite;
+}
+
+@keyframes movingRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes movingLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

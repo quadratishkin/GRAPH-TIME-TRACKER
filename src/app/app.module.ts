@@ -7,6 +7,7 @@ import { BlockComponent } from './components/block/block.component';
 import { ColumnComponent } from './components/column/column.component';
 import { TableComponent } from './components/table/table.component';
 import { InfoBlocksComponent } from './components/info-blocks/info-blocks.component';
+import { RunningLineComponent } from './components/running-line/running-line.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InfoBlocksComponent } from './components/info-blocks/info-blocks.compon
     BlockComponent,
     ColumnComponent,
     TableComponent,
-    InfoBlocksComponent
+    InfoBlocksComponent,
+    RunningLineComponent
   ],
   imports: [
     BrowserModule,
