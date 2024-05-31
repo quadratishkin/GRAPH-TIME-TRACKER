@@ -9,7 +9,6 @@
   display: flex;
   width: 200%;
   justify-content: space-around;
-  animation: moving 5s linear infinite;
 }
 
 .elements {
@@ -21,10 +20,16 @@
 
 .left {
   animation: movingLeft 5s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
 .right {
   animation: movingRight 5s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
 @keyframes movingRight {
